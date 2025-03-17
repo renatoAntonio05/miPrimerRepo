@@ -1,0 +1,6 @@
+# IDE
+.idea/*
+
+# variables de entorno
+.env
+.env.prod
