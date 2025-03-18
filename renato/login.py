@@ -12,3 +12,16 @@ password_user_db= "12345678"
 # 4. Si son correctos imprimir "Bienvenido"
 # 5. Si no son correctos imprimir "Email o contraseña incorrectos"
 
+name_user = input('ingresa tu usuario-> ')
+password = ""
+
+
+if name_user.strip().lower() == email_user_db.strip().lower():
+    password = input('Ingresa tu contraseña -> ')
+    if password == password_user_db:
+        print('Bienvenido')
+    else:
+        print('Email o contraseña es incorrectos')
+else:
+    print('El usuario no existe')
+
