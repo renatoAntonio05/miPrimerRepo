@@ -15,18 +15,24 @@ password_user_db= "12345678"
 
 
 # Este bucle tiene una condicional para cerciorarse que los campos no vayan en blanco.
-while True:
-    name_user = input('ingresa tu usuario-> ').strip().lower()
-    if name_user:
-        break
+# TODO: anota para que sirve cada uno.
+# Strip:
+#lower:
+name_user = input('ingresa tu usuario-> ').strip().lower()
+
+# Validamos que el campo no este vació.
+if name_user != '':
     print('no se admiten espacios vacios')
 
+
+# FIX:
 # Esta bucle tiene una condicional para cerciorarse que los campos no vayan en blanco.
 while True:
     password = input('ingresa tu password-> ').strip()
     if password:
         break
     print('no se admiten espacios vacios')
+
 
 if name_user.strip().lower() == email_user_db.strip().lower():
     if password == password_user_db:
