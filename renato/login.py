@@ -1,8 +1,9 @@
 # Validar que el usuario que se loguea sea el mismo que esta en la base de datos
+import password
 
 # Datos de la base de datos
-email_user_db = "daniel23.da74@gmail.com"
-password_user_db= "12345678"
+email_user_db = "tony2@gmail.com"
+password_user_db= "12345"
 
 
 # ¿Que vas hacer?
@@ -16,23 +17,17 @@ password_user_db= "12345678"
 
 # Este bucle tiene una condicional para cerciorarse que los campos no vayan en blanco.
 # TODO: anota para que sirve cada uno.
-# Strip:
-#lower:
+# Strip: elimine los espacios vacios
+#lower: para que pase todas los caracteres a minusculas
 name_user = input('ingresa tu usuario-> ').strip().lower()
+password = input('ingresa tu password-> ').strip()
 
 # Validamos que el campo no este vació.
-if name_user != '':
-    print('no se admiten espacios vacios')
+if name_user == '':
+    print('Falta usuario')
 
-
-# FIX:
-# Esta bucle tiene una condicional para cerciorarse que los campos no vayan en blanco.
-while True:
-    password = input('ingresa tu password-> ').strip()
-    if password:
-        break
-    print('no se admiten espacios vacios')
-
+if password == '':
+    print('Flata contraseña')
 
 if name_user.strip().lower() == email_user_db.strip().lower():
     if password == password_user_db:
@@ -41,7 +36,4 @@ if name_user.strip().lower() == email_user_db.strip().lower():
         print('Email o contraseña es incorrectos')
 else:
     print('No ingresaste Email o contraseña correcto')
-
-
-
 
