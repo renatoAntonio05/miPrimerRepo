@@ -1,10 +1,7 @@
 # Validar que el usuario que se loguea sea el mismo que esta en la base de datos
-import password
-
 # Datos de la base de datos
 email_user_db = "tony2@gmail.com"
 password_user_db= "12345"
-
 
 # ¿Que vas hacer?
 # 1. Pedirle al usuario que ingrese su email (terminal usando input)
@@ -13,7 +10,6 @@ password_user_db= "12345"
 # 4. Si son correctos imprimir "Bienvenido"
 # 5. Si no son correctos imprimir "Email o contraseña incorrectos"
 # 6. No se admiten espacios vasios
-
 
 # Este bucle tiene una condicional para cerciorarse que los campos no vayan en blanco.
 # TODO: anota para que sirve cada uno.
@@ -27,7 +23,7 @@ if name_user == '':
     print('Falta usuario')
 
 if password == '':
-    print('Flata contraseña')
+    print('Falta contraseña')
 
 if name_user.strip().lower() == email_user_db.strip().lower():
     if password == password_user_db:
