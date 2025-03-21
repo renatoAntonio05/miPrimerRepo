@@ -1,15 +1,7 @@
 from helpers import validation_not_empty as validation
+from helpers import validation_email_password as verificacion
 
 
-# Esta es una funcion para login de un usuario.
-def validation_email_password(email_db,password_db,email_input,password_input):
-    if email_db.strip().lower() == email_input.strip().lower():
-        if password_db == password_input:
-            print('Bienvenido')
-        else:
-            print('Email o contraseña es incorrectos')
-    else:
-        print('No ingresaste Email o contraseña correcto')
 
 
 email_user_db = "tony2@gmail.com"
@@ -24,5 +16,5 @@ validation.validation_not_empty(name_user,'el valor debe tener algo')
 # Validar que la contraseña no venga vacia.
 validation.validation_not_empty_default_message(password)
 
-validation_email_password(email_user_db,password_user_db,name_user,password)
+verificacion.validation_email_password(email_user_db,password_user_db,name_user,password)
 
