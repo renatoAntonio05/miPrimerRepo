@@ -1,9 +1,8 @@
 from helpers import validation_not_empty as validation
 from helpers import validation_email_password as verificacion
 from helpers import get_info_input as inputs
-from  helpers import  get_info_db as db
-
-
+from helpers import  get_info_db as db
+from helpers import validacion_correo as correo
 
 values = db.get_info_db()
 
@@ -18,3 +17,4 @@ validation.validation_not_empty_default_message(password)
 
 verificacion.validation_email_password(values['email'],values['password_user_db'],name_user,password)
 
+correo.validar_correo(values['email'])
