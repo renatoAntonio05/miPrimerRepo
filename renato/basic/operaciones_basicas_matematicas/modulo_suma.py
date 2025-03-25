@@ -2,4 +2,4 @@
 
 def suma(num_1, num_2):
     resultant_suma = num_1 + num_2
-    print(resultant_suma)
+    return resultant_suma
