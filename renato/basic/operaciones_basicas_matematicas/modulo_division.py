@@ -1,0 +1,8 @@
+# modulo divicion
+
+def division(num_1, num_2):
+    if num_1 != 0 and num_2!= 0:
+        resultado_division = num_1 /num_2
+        print(resultado_division)
+    else:
+        print("Error: Ningún número puede ser cero")
