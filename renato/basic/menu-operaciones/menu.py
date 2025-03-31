@@ -2,7 +2,7 @@ from renato.basic.operaciones_basicas_matematicas.modulo_multiplicaicon import m
 from renato.basic.operaciones_basicas_matematicas.modulo_resta import resta
 from renato.basic.operaciones_basicas_matematicas.modulo_suma import suma
 from renato.basic.operaciones_basicas_matematicas.modulo_division import division
-
+ # le agregue el modulo
 
 def menu():
     while True:
@@ -32,7 +32,6 @@ def menu():
         if option =="4":
             print("Resultado de la division es: ", division(num_input_1,num_input_2))
             print("\n")
-
 
 
 # Llamamos la función
