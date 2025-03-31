@@ -1,4 +1,7 @@
+from renato.basic.operaciones_basicas_matematicas.modulo_multiplicaicon import multiplicacion
+from renato.basic.operaciones_basicas_matematicas.modulo_resta import resta
 from renato.basic.operaciones_basicas_matematicas.modulo_suma import suma
+from renato.basic.operaciones_basicas_matematicas.modulo_division import division
 
 
 def menu():
@@ -7,6 +10,8 @@ def menu():
         print("Selecciona la opción que deseas realizar")
         print("1.- Sumar")
         print("2.- Restar")
+        print("3.- Multiplicar")
+        print("4.- Division")
 
         option = input("ingresa la opción que deseas: ")
         num_input_1 = int(input("Ingresa el primero numero: "))
@@ -15,6 +20,19 @@ def menu():
         if option == "1":
             print("Resultado de la suma es: ", suma(num_input_1, num_input_2))
             print("\n")
+
+        if option == "2":
+            print("Resultado de la resta es: ", resta(num_input_1, num_input_2))
+            print("\n")
+
+        if option == "3":
+            print("Resultado de la multiplicacion es: ", multiplicacion(num_input_1, num_input_2))
+            print("\n")
+
+        if option =="4":
+            print("Resultado de la division es: ", division(num_input_1,num_input_2))
+            print("\n")
+
 
 
 # Llamamos la función
