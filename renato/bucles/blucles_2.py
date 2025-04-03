@@ -1,4 +1,5 @@
 # es el conjunto de frutas
+from IPython.lib.pretty import Printable
 
 frutas = ["manzana", "naranja", "piña", "sandia", "pera", "melon", "platano", "papaya", "naranja", "guayaba", "mango"]
 
@@ -6,18 +7,18 @@ frutas = ["manzana", "naranja", "piña", "sandia", "pera", "melon", "platano", "
 size = 0
 # con el for recorremos la lista
 for fruta in frutas:
-    # incrementa la variable en cada bucle
+    #incrementa la variable en cada bucle
     size = size + 1  # TODO: esto lo haces para saber cual es el index de las frutas
     # se imprime el elemento de la lista y el tamaño
     print(size, fruta)
-
+print('-------------------------------------------------------------')
 ########################################################################################################
 # la lista se opcupa un varible
 len_mylist = len(frutas)
 # el otro metodo es mediante un ciclo
 for x in range(len_mylist):
     print(frutas[x])
-
+print("--------------------------------------------------------------")
 ########################################################################################################
 # este codigo se cuentan los elementos de cada uno de los strings
 # total_caracteres sera la variable con la que se guardan lo recorrido por el ciclo
@@ -28,5 +29,8 @@ for fruto in frutas:
     # TODO: Esta bien solo que quiero que imprimas las que tiene 7 o mas caracteres.
     # TODO: Tenemos que hacer una validación
     total_caracteres = len(fruto)
-    # se imprime el resultado
-    print(total_caracteres)
+    # con esta condicion se imprime unicamnete las palabras que son mayores a
+    if total_caracteres >= 7:  #
+        print(fruto)
+        # se imprime el resultado
+
