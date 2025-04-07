@@ -12,3 +12,26 @@ Genera un número aleatorio del 1 al 100 y permite al usuario adivinar. Da pista
         Si no es el mismo numero y es mas grande: el numero es mas pequeño. (Condicional)
         Si no es el mismo numero y es mas pequeño: el numero es mas grande. (Condicional)
 """
+
+#import random
+
+numero_aleatorio = random.randint(1, 100)
+
+print(numero_aleatorio)
+
+while True:
+    numero_usuario = int(input('ingresa el numero: '))
+    if numero_usuario < numero_aleatorio:
+        print('El número es más grande.')
+    elif numero_usuario > numero_aleatorio:
+        print('El número es más pequeño.')
+    elif numero_usuario == numero_aleatorio:
+        print('¡Ganaste, felicidades!')
+    else:
+        break
+
+
+
+
+
+
