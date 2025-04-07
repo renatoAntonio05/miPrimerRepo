@@ -13,7 +13,14 @@ Genera un número aleatorio del 1 al 100 y permite al usuario adivinar. Da pista
         Si no es el mismo numero y es mas pequeño: el numero es mas grande. (Condicional)
 """
 
-#import random
+"""
+    Agregar un numero de intentos y validar que no supere esos limites.
+    5 intentos.
+    Tienes que hacer un contador que sume cada vez que falle y si supera el numero de intentos decirle cual es el 
+    numero y decirle que perdio.
+"""
+
+import random
 
 numero_aleatorio = random.randint(1, 100)
 
@@ -27,11 +34,4 @@ while True:
         print('El número es más pequeño.')
     elif numero_usuario == numero_aleatorio:
         print('¡Ganaste, felicidades!')
-    else:
         break
-
-
-
-
-
-
