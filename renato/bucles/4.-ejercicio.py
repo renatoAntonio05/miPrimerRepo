@@ -24,10 +24,14 @@ import random
 
 numero_aleatorio = random.randint(1, 100)
 
-print(numero_aleatorio)
+#se agregaron dos variables para verificar el numero de intentos
+intentos = 0
 
-while True:
+max_intentos = 5
+
+while intentos < max_intentos:
     numero_usuario = int(input('ingresa el numero: '))
+    intentos += 1
     if numero_usuario < numero_aleatorio:
         print('El número es más grande.')
     elif numero_usuario > numero_aleatorio:
@@ -35,3 +39,6 @@ while True:
     elif numero_usuario == numero_aleatorio:
         print('¡Ganaste, felicidades!')
         break
+# le agregue esta condicional para verificar el numero de intentos.
+if intentos == max_intentos:
+    print("superaste el numero intentos el numero ganador es", numero_aleatorio, "Has perdido")
