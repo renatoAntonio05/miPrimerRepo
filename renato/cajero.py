@@ -5,11 +5,7 @@
 # sacar valance de cuanto dinero saco e ingreso
 
 
-dinero_total = 1000
-movimientos = []
-
-def menu_cajero():
-    global dinero_total
+def menu_cajero(dinero_total, movimientos):
     while True:
         print("Bienvenido, Elige una opcion: ")
         print("1 Efectuar un retiro")
@@ -20,7 +16,7 @@ def menu_cajero():
         option = input("Ingresa tu opcion=> ")
         print("--------------------------------")
 
-        if option  not in ["1","2","3","4","5"]:
+        if option not in ["1", "2", "3", "4", "5"]:
             print("Esa opcion no es valida")
             print("vuleve a intentarlo")
             print("---------------------")
@@ -30,14 +26,14 @@ def menu_cajero():
             if retirar_dinero <= dinero_total:
                 print("Toma tu dinero")
                 dinero_total -= retirar_dinero
-                movimientos.append(f"retiros -,{retirar_dinero }") #esta varibale es para almacenar todos retiros
+                movimientos.append(f"retiros -{retirar_dinero}")  # esta varibale es para almacenar todos retiros
             else:
                 print("No tienes Saldo suficiente")
 
         if option == "2":
             ingresar_dinero = int(input("Ingresa el efectivo=>    "))
             dinero_total += ingresar_dinero
-            movimientos.append(f"ingresos: + {ingresar_dinero}") # se usa esta varible para almacenar todos ingresos
+            movimientos.append(f"ingresos: + {ingresar_dinero}")  # se usa esta varible para almacenar todos ingresos
             print("Tu dinero a sido ingresado")
 
         if option == "3":
@@ -47,14 +43,12 @@ def menu_cajero():
             for movimiento in movimientos:
                 print(movimiento)
 
-
-
         if option == "5":
             print("Saliste del menu")
             exit()
 
 
+dinero_total = 1000
+movimientos = []
 
-
-
-menu_cajero()
+menu_cajero(dinero_total, movimientos)
