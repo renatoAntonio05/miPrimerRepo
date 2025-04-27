@@ -1,5 +1,7 @@
-"""5.- Crear una función que verifique si una lista está vacía
-Pista: Recuerda como debemos saber la logitud de una lista. """
+"""
+5.- Crear una función que verifique si una lista está vacía
+Pista: Recuerda como debemos saber la logitud de una lista.
+"""
 
 
 def verificador_lista(lista_a):
