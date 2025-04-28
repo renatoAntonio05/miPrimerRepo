@@ -9,3 +9,8 @@ palabra = max(lista_palabras, key=len)
 print("la palabra mas larga es =>", {palabra})
 
 # TODO: Ahora hazlo con ciclos.
+palabra_nombre = ''
+
+# cliclo que recorra toda la lista
+# Saber que tan grande es la palabra que esta recorriendo
+# Comprar con la logitud de la palabra recorrida con palabra_nombre
