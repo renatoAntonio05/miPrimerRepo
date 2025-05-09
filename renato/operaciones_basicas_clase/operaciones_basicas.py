@@ -1,8 +1,6 @@
-num1 = 10
-num2 = 30
 
+class Operaciones:
 
-class Sumar:
     def __init__(self,num1,num2):
         self.num1 =  num1
         self.num2 = num2
@@ -10,44 +8,14 @@ class Sumar:
     def suma(self):
         return  self.num1 + self.num2
 
-
-suma = Sumar(num1,num2)
-print(suma.suma())
-
-
-class Resta:
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 =num2
-
     def resta(self):
         return self.num1 - self.num2
-
-
-resta = Resta(num1,num2)
-print(resta.resta())
-
-
-class multiply:
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
 
     def multiplicacion(self):
         if self.num1 != 0 and self.num2 !=0:
             return self.num1 * self.num2
         else:
             print("No se puede mulplicar un numero por cero")
-
-multiplicacion = multiply(num1,num2)
-print(multiplicacion.multiplicacion())
-
-
-
-class Division:
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
 
     def division(self):
         if self.num1 !=0 and self.num2 != 0:
@@ -56,5 +24,13 @@ class Division:
             print("No se puede dividir numeros entre cero")
 
 
-division = Division(num1,num2)
-print(division.division())
+
+num1 = 10
+num2 = 10
+
+operacion = Operaciones(num1, num2)
+
+print("Suma:", operacion.suma())
+print("Resta:", operacion.resta())
+print("multiplicacion:", operacion.multiplicacion())
+print("division:", operacion.division())
